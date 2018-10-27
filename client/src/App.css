@@ -1,0 +1,166 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+body {
+    background:linear-gradient(135deg, #C56CD6 0%,#3425AF 100%);
+    background-repeat: no-repeat;
+}
+
+header {
+    height: 80px;
+    position: relative;
+}
+
+header .header-controls {
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    min-width: 200px;
+}
+
+header .header-controls div:first-of-type {
+    margin-right: 30px;
+}
+
+#logout {
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+form {
+    margin: 100px auto;
+    width: 400px;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+form h2 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 9px 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 1em;
+}
+
+.dashboard-content {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 800px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.content-header {
+    padding: 20px;
+    border-bottom: 1px solid #e7a8ff;
+}
+
+.content-header h3 {
+    padding: 0;
+    margin: 0;
+    color: #bf7bd8;
+}
+
+.employee {
+    border-bottom: 1px solid #e7a8ff;
+}
+
+.employee:last-of-type {
+    border-bottom: none;
+}
+
+.employee-financial-data {
+    display: none;
+}
+
+th, td {
+    text-align: left;
+}
+tr td:last-child{
+    width:1%;
+    white-space:nowrap;
+}
+
+.employee-name {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: #753dba;
+}
+
+.employee-controls {
+    padding: 0 0 5px 20px;
+}
+
+.employee-controls a {
+    font-size: 0.75em;
+    color: #666;
+    text-decoration: none;
+    margin-right:20px;
+    cursor: pointer;
+}
+
+.employee-controls a:hover {
+    color: #111;
+}
+
+.information-row {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0;
+    font-size: 0.9em;
+}
+
+.information-row .label {
+    min-width: 100px;
+    text-align: right;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.information-row .value {
+    text-align: left;
+}
+
+.financial-information,
+.employee-information {
+    padding: 0 20px;
+}
+
+.financial-data,
+.employee-data {
+    padding: 10px 0;
+}
+
