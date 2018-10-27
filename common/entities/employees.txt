@@ -1,0 +1,8 @@
+# Below are employee details to use in this challenge
+# Do not modify this file
+# {null} is to be interpreted as a NoneType object
+id		first_name		last_name		date_of_birth		is_terminated		address1		address2		city		state		postcode		country
+1		John		Bell		1954-10-11		0		PO Box 522		4 Jones Street		GOONDIWINDI		QLD		4390		AU
+2		Lex		Bell		1988-10-26		0		PO Box 522		4 Jones Street		GOONDIWINDI		QLD		4390		AU
+3		Ray		Smith		1981-08-17		0		29 Wilson Street		{null}		GOONDIWINDI		QLD		4390		AU
+4		Rodney		James		1991-08-31		0		11 Rains Road		{null}		GOONDIWINDI		QLD		4390		AU

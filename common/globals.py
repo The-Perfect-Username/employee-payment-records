@@ -1,0 +1,1 @@
+JWT_SECRET_KEY = 'ESAi@Eof*SzPG"trG?vtBvcX*J@<bf'
