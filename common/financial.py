@@ -1,12 +1,14 @@
 from flask_restful import Resource
-from flask import request, jsonify
+from flask import request
 from datetime import datetime
+from common.authenticate import token_required
 
 from common.query import Query
 from common.payment import Payment
 import json
 
 class Financial(Resource):
+    @token_required
     def get(self):
 
         try:

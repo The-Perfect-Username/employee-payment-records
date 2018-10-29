@@ -1,11 +1,12 @@
 from flask_restful import Resource
-from flask import request, jsonify
+from common.authenticate import token_required
 
 from common.query import Query
 from common.payment import Payment
 import json
 
 class Employees(Resource):
+    @token_required
     def get(self, employee_id=None):
 
         if employee_id is None:
