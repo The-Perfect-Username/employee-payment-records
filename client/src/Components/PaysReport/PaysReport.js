@@ -10,7 +10,13 @@ export default class PaysReport extends Component {
 
     componentDidMount() {
         // TODO: Make it so a user can retrieve other employee payment records
-        fetch(`http://localhost:5000/payments?employee_id=1`)
+        fetch(`http://localhost:5000/payments?employee_id=1`,
+        {
+			method: 'GET',
+			headers: {
+				'Authorization': `Bearer ${localStorage.getItem('token')}`
+			}
+		})
         .then((response) => response.json())
         .then((data) => {
             this.setState({'financial_data': JSON.parse(data)});

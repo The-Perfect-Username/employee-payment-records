@@ -9,7 +9,13 @@ class EmployeeReport extends Component {
 	}
 
 	componentDidMount() {
-		fetch("http://localhost:5000/employees")
+		fetch("http://localhost:5000/employees",
+		{
+			method: 'GET',
+			headers: {
+				'Authorization': `Bearer ${localStorage.getItem('token')}`
+			}
+		})
         .then((response) => response.json())
         .then((data) => {
 			this.setState({employee_data: JSON.parse(data)});

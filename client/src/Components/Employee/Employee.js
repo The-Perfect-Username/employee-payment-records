@@ -29,7 +29,13 @@ class Employee extends Component {
 	}
 
 	getFinancialData(employee_id) {
-		fetch(`http://localhost:5000/employees/${employee_id}`)
+		fetch(`http://localhost:5000/employees/${employee_id}`,
+		{
+			method: 'GET',
+			headers: {
+				'Authorization': `Bearer ${localStorage.getItem('token')}`
+			}
+		})
 		.then((response) => response.json())
 		.then((data) => {
 			this.setState({financial_data: JSON.parse(data)});
